@@ -81,7 +81,7 @@ jobs:
             src/build-scripts/gh-installdeps.bash
       - name: Build
         run: src/build-scripts/ci-build.bash
-      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
+      - uses: actions/upload-artifact@v3
         with:
           name: oiio-${{github.job}}-${{matrix.nametag}}
           path: |
